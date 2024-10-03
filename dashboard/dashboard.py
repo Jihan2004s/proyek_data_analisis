@@ -42,7 +42,7 @@ def create_rfm_df(df):
     return rfm_df
 
 # Load cleaned data
-all_df = pd.read_csv("all_data.csv")
+all_df = pd.read_csv("dashboard/all_data.csv")
 
 all_df.sort_values(by="dteday", inplace=True)
 all_df.reset_index(inplace=True)
